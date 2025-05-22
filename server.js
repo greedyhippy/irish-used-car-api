@@ -1,20 +1,23 @@
 const jsonServer = require('json-server');
-const cors = require('cors');
+const path = require('path');
 
 const server = jsonServer.create();
-const router = jsonServer.router('db.json');
-const middlewares = jsonServer.defaults();
+const router = jsonServer.router(path.join(__dirname, 'db.json'));
+const middlewares = jsonServer.defaults({
+  static: './public'
+});
 
-// Enable CORS for all origins
-server.use(cors());
+// Enable CORS
+server.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', '*');
+  res.header('Access-Control-Allow-Methods', '*');
+  next();
+});
 
-// Add custom routes/middleware here if needed
 server.use(middlewares);
 
-// Use /api prefix for all routes
-server.use('/api/v1', router);
-
-// Add a root route
+// Add custom routes
 server.get('/', (req, res) => {
   res.json({
     message: 'Irish Used Car API',
@@ -26,7 +29,7 @@ server.get('/', (req, res) => {
       'technical-data': '/api/v1/technical-data',
       valuations: '/api/v1/valuations',
       history: '/api/v1/history',
-      nct: '/api/v1/nct',
+      mot: '/api/v1/mot',
       finance: '/api/v1/finance',
       'total-cost-ownership': '/api/v1/total-cost-ownership',
       tyres: '/api/v1/tyres',
@@ -35,9 +38,11 @@ server.get('/', (req, res) => {
   });
 });
 
+// Use /api/v1 prefix
+server.use('/api/v1', router);
+
+// For Vercel
 const port = process.env.PORT || 3000;
-server.listen(port, () => {
-  console.log(`JSON Server is running on port ${port}`);
-});
+server.listen(port);
 
 module.exports = server;
