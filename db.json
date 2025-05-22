@@ -1,0 +1,409 @@
+{
+  "vehicles": [
+    {
+      "id": "VIN12345678901234",
+      "make": "BMW",
+      "model": "3 Series",
+      "variant": "320i M Sport",
+      "year": 2020,
+      "registration": "201-D-12345",
+      "vin": "VIN12345678901234",
+      "color": "Alpine White",
+      "doors": 4,
+      "bodyType": "Saloon",
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "engineSize": 2.0,
+      "mileage": 25000,
+      "owners": 1,
+      "price": 21500,
+      "location": {
+        "dealership": "Premium Motors Dublin Ltd",
+        "address": "45 Grafton Street, Dublin 2, D02 XY89",
+        "postcode": "D02 XY89",
+        "county": "Dublin"
+      }
+    },
+    {
+      "id": "VIN98765432109876",
+      "make": "Audi",
+      "model": "A4",
+      "variant": "2.0 TFSI S Line",
+      "year": 2019,
+      "registration": "191-KE-5678",
+      "vin": "VIN98765432109876",
+      "color": "Glacier White",
+      "doors": 4,
+      "bodyType": "Saloon",
+      "transmission": "Automatic",
+      "fuelType": "Petrol",
+      "engineSize": 2.0,
+      "mileage": 32000,
+      "owners": 2,
+      "price": 19500,
+      "location": {
+        "dealership": "Audi Centre Cork",
+        "address": "Cork Road Business Park, Waterford, X91 PF23",
+        "postcode": "X91 PF23",
+        "county": "Waterford"
+      }
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "category": "exterior_front",
+      "url": "https://via.placeholder.com/800x600/0066cc/ffffff?text=BMW+3+Series+Front",
+      "thumbnail": "https://via.placeholder.com/300x200/0066cc/ffffff?text=BMW+Front+Thumb",
+      "isPrimary": true,
+      "uploadDate": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "vehicleId": "VIN12345678901234",
+      "category": "interior_dashboard",
+      "url": "https://via.placeholder.com/800x600/333333/ffffff?text=BMW+Interior",
+      "thumbnail": "https://via.placeholder.com/300x200/333333/ffffff?text=BMW+Interior+Thumb",
+      "isPrimary": false,
+      "uploadDate": "2024-01-15T10:32:00Z"
+    },
+    {
+      "id": 3,
+      "vehicleId": "VIN98765432109876",
+      "category": "exterior_front",
+      "url": "https://via.placeholder.com/800x600/cc0000/ffffff?text=Audi+A4+Front",
+      "thumbnail": "https://via.placeholder.com/300x200/cc0000/ffffff?text=Audi+Front+Thumb",
+      "isPrimary": true,
+      "uploadDate": "2024-01-20T09:15:00Z"
+    }
+  ],
+  "specifications": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "engine": {
+        "capacity": "1998cc",
+        "cylinders": 4,
+        "configuration": "Inline",
+        "aspiration": "Turbocharged",
+        "power": "184 HP",
+        "torque": "300 Nm"
+      },
+      "performance": {
+        "topSpeed": "235 km/h",
+        "acceleration0to100": "7.1 seconds",
+        "fuelType": "Petrol"
+      },
+      "dimensions": {
+        "length": "4709mm",
+        "width": "1827mm",
+        "height": "1442mm",
+        "wheelbase": "2851mm",
+        "weight": "1570kg"
+      },
+      "features": {
+        "safety": ["ABS", "ESP", "Airbags", "Lane Departure Warning"],
+        "comfort": ["Climate Control", "Heated Seats", "Navigation System"],
+        "technology": ["Bluetooth", "USB Connectivity", "Wireless Charging"]
+      }
+    },
+    {
+      "id": 2,
+      "vehicleId": "VIN98765432109876",
+      "engine": {
+        "capacity": "1984cc",
+        "cylinders": 4,
+        "configuration": "Inline",
+        "aspiration": "Turbocharged",
+        "power": "190 HP",
+        "torque": "320 Nm"
+      },
+      "performance": {
+        "topSpeed": "240 km/h",
+        "acceleration0to100": "6.8 seconds",
+        "fuelType": "Petrol"
+      },
+      "dimensions": {
+        "length": "4762mm",
+        "width": "1847mm",
+        "height": "1436mm",
+        "wheelbase": "2820mm",
+        "weight": "1590kg"
+      },
+      "features": {
+        "safety": ["ABS", "ESP", "Multiple Airbags", "Pre-collision System"],
+        "comfort": ["Dual Zone Climate", "Leather Seats", "MMI Navigation"],
+        "technology": ["Bluetooth", "Apple CarPlay", "Virtual Cockpit"]
+      }
+    }
+  ],
+  "technical-data": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "engine": {
+        "code": "B48A20T1",
+        "type": "4-cylinder turbo petrol",
+        "displacement": 1998,
+        "maxPower": "135kW @ 5000-6500rpm",
+        "maxTorque": "300Nm @ 1350-4000rpm",
+        "compressionRatio": "11.0:1",
+        "fuelSystem": "Direct injection",
+        "emissionStandard": "Euro 6"
+      },
+      "transmission": {
+        "type": "8-speed automatic",
+        "gears": 8,
+        "driveType": "RWD"
+      },
+      "suspension": {
+        "front": "MacPherson struts",
+        "rear": "Multi-link"
+      },
+      "brakes": {
+        "front": "Ventilated discs",
+        "rear": "Solid discs",
+        "abs": true,
+        "ebd": true
+      }
+    }
+  ],
+  "valuations": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "currentValuation": {
+        "tradeValue": 18500,
+        "retailValue": 21500,
+        "privateValue": 20000,
+        "currency": "EUR",
+        "valuationDate": "2024-05-22T00:00:00Z",
+        "mileageAtValuation": 25000
+      },
+      "marketAnalysis": {
+        "averageMarketPrice": 20200,
+        "priceRange": {
+          "min": 17500,
+          "max": 23000
+        },
+        "marketPosition": "Below Average",
+        "daysOnMarket": 28
+      },
+      "depreciation": {
+        "monthlyRate": 1.2,
+        "yearlyRate": 14.5,
+        "totalDepreciation": 28.5,
+        "originalPrice": 32000
+      }
+    }
+  ],
+  "history": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "historyCheck": {
+        "checkDate": "2024-05-22T10:00:00Z",
+        "dataSource": "NCTS, Motor Insurance Database, Finance Houses",
+        "overallStatus": "Clear"
+      },
+      "ownership": {
+        "numberOfOwners": 1,
+        "ownershipHistory": [
+          {
+            "ownerNumber": 1,
+            "acquisitionDate": "2020-03-15",
+            "ownershipType": "Private",
+            "duration": "4 years 2 months"
+          }
+        ]
+      },
+      "finance": {
+        "outstandingFinance": false,
+        "previousFinance": true,
+        "financeType": "Hire Purchase",
+        "settledDate": "2023-03-15"
+      },
+      "insurance": {
+        "totalLossRecord": false,
+        "theftRecord": false,
+        "floodDamage": false,
+        "fireRecord": false
+      },
+      "accidents": {
+        "accidentRecord": false,
+        "insuranceClaims": 0
+      }
+    }
+  ],
+  "mot": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "currentMot": {
+        "expiryDate": "2024-09-15",
+        "testDate": "2023-09-10",
+        "testResult": "Pass",
+        "certificateNumber": "1234567890",
+        "testMileage": 23500,
+        "testingStation": "NCT Centre Tallaght, Dublin"
+      },
+      "motHistory": [
+        {
+          "testDate": "2023-09-10",
+          "result": "Pass",
+          "mileage": 23500,
+          "advisories": 1,
+          "minorDefects": 0,
+          "majorDefects": 0,
+          "dangerous": 0
+        },
+        {
+          "testDate": "2022-09-08",
+          "result": "Pass",
+          "mileage": 18200,
+          "advisories": 0,
+          "minorDefects": 0,
+          "majorDefects": 0,
+          "dangerous": 0
+        }
+      ],
+      "advisories": [
+        {
+          "category": "Tyres",
+          "description": "Nearside front tyre has minor cut",
+          "severity": "Advisory"
+        }
+      ]
+    }
+  ],
+  "finance": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "vehiclePrice": 21500,
+      "financeOptions": [
+        {
+          "type": "Hire Purchase",
+          "deposit": 2150,
+          "loanAmount": 19350,
+          "apr": 6.9,
+          "term": 48,
+          "monthlyPayment": 455.23,
+          "totalAmount": 24001.04,
+          "totalInterest": 2501.04
+        },
+        {
+          "type": "Personal Contract Purchase",
+          "deposit": 2150,
+          "loanAmount": 19350,
+          "apr": 7.9,
+          "term": 48,
+          "monthlyPayment": 325.67,
+          "balloonPayment": 8500,
+          "totalAmount": 26222.16,
+          "totalInterest": 4722.16,
+          "mileageLimit": 10000
+        }
+      ]
+    }
+  ],
+  "total-cost-ownership": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "analysisParameters": {
+        "period": 36,
+        "annualMileage": 12000,
+        "totalMileage": 36000
+      },
+      "initialCosts": {
+        "purchasePrice": 21500,
+        "registrationFee": 55,
+        "insurance": 850,
+        "extendedWarranty": 450
+      },
+      "runningCosts": {
+        "fuel": {
+          "monthly": 165,
+          "total": 5940
+        },
+        "insurance": {
+          "monthly": 75,
+          "total": 2700
+        },
+        "maintenance": {
+          "monthly": 85,
+          "total": 3060
+        }
+      },
+      "summary": {
+        "totalCostOfOwnership": 41564.55,
+        "monthlyCost": 1154.57,
+        "costPerMile": 1.15
+      }
+    }
+  ],
+  "tyres": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "currentTyres": {
+        "front": {
+          "size": "225/50R17",
+          "brand": "Continental",
+          "model": "ContiSportContact 5",
+          "treadDepth": 6.5,
+          "condition": "Good",
+          "lastChanged": "2023-08-15"
+        },
+        "rear": {
+          "size": "225/50R17",
+          "brand": "Continental",
+          "model": "ContiSportContact 5",
+          "treadDepth": 5.8,
+          "condition": "Good",
+          "lastChanged": "2023-08-15"
+        }
+      },
+      "replacement": {
+        "estimatedCost": {
+          "budget": 280,
+          "midRange": 480,
+          "premium": 680
+        },
+        "nextReplacementMileage": 45000
+      }
+    }
+  ],
+  "fuel-consumption": [
+    {
+      "id": 1,
+      "vehicleId": "VIN12345678901234",
+      "officialFigures": {
+        "wltpCombined": 6.8,
+        "wltpUrban": 8.2,
+        "wltpExtraUrban": 5.9,
+        "wltpHighway": 6.1,
+        "co2Emissions": 155,
+        "fuelType": "Petrol",
+        "testStandard": "WLTP"
+      },
+      "realWorldData": {
+        "averageConsumption": 7.4,
+        "cityDriving": 9.1,
+        "highwayDriving": 6.2,
+        "combinedDriving": 7.4,
+        "dataSource": "Owner reports",
+        "sampleSize": 1247
+      },
+      "costs": {
+        "fuelPrice": 1.65,
+        "currency": "EUR",
+        "costPer100km": 10.73,
+        "annualFuelCost": 1287.6,
+        "basedOnMileage": 12000
+      }
+    }
+  ]
+}
